@@ -1,0 +1,443 @@
+I've got my agenda ready just yet. I was just in the middle of something else or your agenda. It's a busy one today. It does, doesn't it? Yeah did look at it earlier.
+Speaker 0
+I've got a few aobs as well to work, but hopefully they won't take long. Let's crack through it then. All right, so 23 five. I'll just go through them in the order that you've got them, then late testing can Australia access 3 4? Yeah, so the email so yeah as we discussed we want them to, don't we? Because we need them to do a WCF test. We're only testing Classic client at the minute and we'll only be testing Classic client at Bournemouth when we put it into site. So we do want them to. I think it would be sensible to be to wait until if we'll come on to it, but if we're sure.
+Speaker 0
+So when we're happy to deploy it to Bournemouth, then I think we should give it to Australia as well. But if we've got any reservations about putting it into a site, then we probably shouldn't give it to Australia either, if that makes sense. So like a beta site for Australia then yeah, effectively, yeah, exactly. So we don't want to give them known problems to even, we'd rather give it with what we think is as near as possible.
+Speaker 0
+A clean and working system and let them find stuff. My guess is that the specific things that they wanted won't be in it, that they'll still if they found bugs in 3 2 or whatever it was that they were looking at, or then that I don't think we've been aware of those. I think it was that worked in 3 2. When they've been testing 3 3, it hasn't worked.
+Speaker 0
+And they're wondering whether it's suddenly now working in version 3 4. Sure, answer being not if they didn't tell us it wasn't working so therefore I think in three four it's unlikely to be different, but that's why they can then we can get that logged as a as a bug fix for 3 4 before they put it into live, can't we?
+Speaker 0
+So where are we? That brings us on to where are we with testing in general? Ok, so I was off on leave last week. Most of last week Ed had sent the email around that 3 4 point 3 1 was ready afternoon. Tracy kindly showed me how to do it, so now I know how to do an easy upgrade.
+Speaker 0
+That we had a database update issue that came up and I got hold of Edwin. I sent him an email and I said this is the error that I'm getting and he sent an email back saying, well you're missing this database update. And then here are all the tickets and he just listed a list of JIRA tickets that they had addressed in 3 4. So at least I've got the JIRA tickets.
+Speaker 0
+Immediately after that when I was doing like a patient flow, I got another database error so sent him an email what's this database error? And he got like annoyed and said well I can't go through all these database errors. Here's a list of all the updates from the update manager or something like that.
+Speaker 0
+Luckily I found it and that was the only one, but I'd like last Monday, so I basically only had Tuesday and yesterday and I've tested all the sort of vetting, scheduling, completion and reporting except for second read and 3rd read and consensus.
+Speaker 0
+I don't know how my system. I don't know how it works, basically. And my system's obviously not configured because I'm following the test scripts and nothing happened. The other thing that I haven't tested is that patient filtering stuff. Tracy, I think you did a whole bunch of it on the first time around and you updated all the tests yeah into the test script yeah so i haven't tested that. And then.
+Speaker 0
+Multi vetting. I haven't tested that, don't know how it works. Everything else seems to be OK except that if you follow the test script, the things that failed last time will fail again this time because you know they've all been logged and put on the backlog. So I reckon it's like mostly mostly done the testing.
+Speaker 0
+It mentioned earlier, Do you even know which ones they fix so we can specifically retest them? So I've got that list of issues, JIRA tickets and the ones that I recognized that I logged from the testing of the previous build. I've retested those and those work so.
+Speaker 0
+For example, I think there was like some issues around exporting, exporting workers. I don't know, I can't remember all that. But the ones that I've recognized, I've retested and they seem to work. Like there were some issues around user settings for vetting and things like that. But a lot of the tickets, most of the tickets, I don't know where they found them from because they weren't any of the issues that we logged.
+Speaker 0
+From the first round of testing I think they started then they when they because they weren't working well with that spreadsheet. They think a lot of the ones that the developers found they started just putting on JIRA and fixing and no doubt fixing and not putting on JIRA as well. So I'm guessing that's where some of them came from if they're not known to you.
+Speaker 0
+Yeah, I think a lot of them had been done previously and this a branch was found and merged back in because some of the things that were done Kakila had done like before she went off on maternity leave. Yeah, some of the really old stuff that we don't know out of what we logged, what's still outstanding then.
+Speaker 0
+No, i haven't worked on that yet because I wanted to do testing to say a lot. It all works. It doesn't fall over. If you've got all the dates it won't fall over. So that's why i focused on just you know the sort of like the main screens, the scheduling and betting and all the rest of it. And now I've got a list. I think there were like 55 deliverables, if you can call them that.
+Speaker 0
+And I will work on understanding what that is and then any of the issues that I haven't found that I've logged that happened to be in this build I will have a look at. But I mean some of the JIRA tickets go back to like 290 you know that kind of thing. These tickets have been around for ages. But yeah that's my next step is to.
+Speaker 0
+Work out what these tickets actually mean and then see if there's a gap in the release notes just on that. Just to help me learn. I've been running through some of the test scripts myself and there's a couple that I can't get to pass. So maybe after this call I can give you another call and just run through them with you have sorry you have yet to pass or you have passed.
+Speaker 0
+No, there's a couple that failed, should I say, or I think they failed, but it could be me, Yeah. And just talk you through them and just if you mind testing and see if it's me or if there is a problem. Yeah, OK, yeah, that'll be quite useful. Because like I say, you know, if the test groups are failing because they failed in the first round, then they're gonna fail in the second round if they haven't been fixed.
+Speaker 0
+They should have all been fixed. That was that was the point of it. They should they know with it. I asked Ed just to give us a version when they were all done. So they should theoretically all be done. We will say know the word work is wrong. Yeah, well, they haven't been fixed Brian, because they all set on the backlog in JIRA.
+Speaker 0
+The majority of the ones that were logged from the first round, so would yeah. So what they did do is that and I wasn't at the meeting when I did go through them with them and any that they thought were cosmetic if you like or you know not issues with the system then.
+Speaker 0
+They would, they left those. So I think that's the case of going of having a look and seeing if you agree with that assessment because it was normally something that we would have done and prioritize those, but they decided to do it themselves.
+Speaker 0
+I think there's two things isn't there, there's does make does this version work and is it a point where we're happy to put it out to A to a test site because we do need to get moving with it and put it out. If some of those things that we found previously we think are important that we need to categorize the importance of those, don't we? And say is this something that actually.
+Speaker 0
+You've development team has said they don't think it's important at all and it they're not planning to do it and left it in backlog. If we think it's so important that we can't put 3 4 out live without it, then we need to get that moving now. Alternatively, what might be more likely, we might say well actually we think they are useful and necessary, let's just put them on the road map for 3 5 rather than 3 4.
+Speaker 0
+We don't want to test again and find have to re enter them all and all the rest of it. Yeah okay, that's one sensible yeah, we just need to get this out in the real world otherwise 3 5 will be ready and we'll want to finish testing 3 4 so okay So what you so we've.
+Speaker 0
+You will need somebody. So I was down to test the multistage vetting so I can upgrade my system and do that and I could do consensus read at the queue. Is your system set up for second read? Etc tracy as well? Yeah, probably. I just don't have a lot of time at the minute. No, absolutely so.
+Speaker 0
+I can do that. If you're gonna do the multi stage I'll find time to do it this and in the next couple of days I guess that was where I was like then the next thing is when do we think some realistic time scale to get it out to Bournemouth. I'm not pushing to have it so next week or anything like that, you know it needs to be realistic but just so that we can start talking to them, we've told them sometime in June so.
+Speaker 0
+If we hit any sure stop as yet on testing. Doesn't sound like it from what Lee was saying. Everything's gone through scripted testing, isn't it? Well yeah, I've tested the main things.
+Speaker 0
+Scheduling, vetting, confirmation, reporting. Except for the consensus reporting and everything's working fine. Yeah, and that's tested using all the scripts that we've used previously. Yeah, so there's one UAT script that tests everything from end to end.
+Speaker 0
+And that's what I'm busy working on now. But I have got individual scripts for completion and betting and scheduling and reporting, which I've done those. And now I'm just going back and doing the UAT one. And I think we've agreed that that's what we were gonna do, just retest the UAT one. But I just wanted to make sure that in the other ones, the smaller ones.
+Speaker 0
+The ones the issues that had failed previously have been fixed and so far that is the case. Good yeah, I think that's the most important point. And like I said, there's these specific workflows that we need to test and we will do and then as you say, if you if the end to end UAT is ready, we're not very far off putting it out on site.
+Speaker 0
+Then before it goes on site, I need to do release notes. So you do. Yeah, we have a if we have a another check in next Tuesday, yeah. We can probably say OK we done now. Ok, no, absolutely. Because it's you know we're pushing to get it out there. But at the same time we don't want to do a mad rush with it. They need to get time to do these last few tests as well and yeah.
+Speaker 0
+And get the documentation right. I need to go through that cheery list of 55 issues that have been addressed yeah and unpick those and understand what those are and then test those. Yeah, no, that's fine. So I think if we will check in next week and then it's, it sounds like we're two or three weeks away, something along those lines, doesn't it? So we're on target for the middle of June is what I was aiming at.
+Speaker 0
+Just obviously, we just want to know if there's going to be, if there's something big that's cropped up that means that hang on, we're not going to hit that. Then we need to tell bomb that's something different because we want to make sure that they've got testing resources lined up. So that's why we want to date that we're reasonably confident that it's going to come out of and be available for them. Ok. So my action is to do the multistage vetting.
+Speaker 0
+To do that, I haven't upgraded my system yet. Where are the necessary resources at the minute? The upgrade files and the database scripts, etc. They're on the dev server, yeah? And then I can just forward you the.
+Speaker 0
+Database updates and I was just going to mention that just really quickly not to go into detail about why it happened or anything like that, but the Norfolk knowledge, accidental upgrade to three to four, I've got that on the agenda under. Yeah, I was just going to mention it now. Yes, as it relates to this. So I was just going to mention it now and.
+Speaker 0
+What it did show was that some of the work done for Norfolk and Norwich hasn't been merged into freed up for just around the DTI. So we didn't know. Do we need to check that someone is going to merge that? Because obviously if we do release it, it's not going to work for Norfolk Norwich. Yeah, I'm yeah and i guess almost more importantly is there anything similar that we've done for Bournemouth that's yeah so it's just like there might be sort of customer specific things that hasn't gone in. I don't know who can check that or how we check that. I guess that would be in Ed's absence, it would be Edwin. So if you maybe ask if just tell him, I would tell him that we're gonna be putting it into Bournemouth as the first Test site. Is he aware of anything that's specific for Bournemouth?
+Speaker 0
+I'm guessing not because spawnmouth are on a very old version I think, but you never know. And then in general it sounds like in general we haven't kept a tidy eye on what's been done for site specific versions. Yeah, that was not worry. Yeah, that's it's Norfolk and Norwich is just the sample size of 1 and it's wrong. So we don't know.
+Speaker 0
+Sorry Steve, I guess they should have all been merged in but that was that was the point wasn't it that Ed was doing a big merge and I you know you worry because he did it in a rush before he went off on holiday and I spoke to him briefly and he said it mean not a nightmare.
+Speaker 0
+And it had to rewrite a lot of what the developments had done in fixing things. So you know what the guys are like, what they Even if you went back to Kakila and said, you know what's wrong with this, she might not even recognize the code because I'd have had to change it when he did the merge. So, and I think of the best way to capture everything is you what you want to avoid is trying to work, you know, sort of every upgrade you come to having to do a new build completely to put in that per that site's specific items. Alright, I don't if that. If Edwin's doing that, then how do we know what to test? It was Ed that did it, and in theory that.
+Speaker 0
+He's done the merge of what we don't know and that should be the list of GERA tickets that Edwin has given to Lee. Hopefully sketchy comfort level of confidence on that, I have to say. But that's the yeah, that's the theory. But yeah, because I'm not convinced that Ed will have told Edwin what he's done either so.
+Speaker 0
+Because he was rushing to do it. Last minute goes back through to the usual lack of process, doesn't it? But that's an old story. Yeah, we thought that this one would be the sort of the final one where this happened, didn't we? Yeah, exactly. And as I say, it was a very quick conversation with Ed. But, you know, I did point out I said that look.
+Speaker 0
+We always end up in this position where the final merge is an absolute nightmare because we haven't controlled the process up to that point. And he said yes, I absolutely agree. We need to just have. He was even saying let's just have one version a year and nobody gets anything else in between those versions and that's it because I think he finally got sick of it. Let's hope he hasn't mellowed too much after a couple of weeks in Australia.
+Speaker 0
+He's agreed to stick to it so when last contacted him make some come over, it was I think it was Ben had accidentally sent him a text message forgetting that he was off and Ed said I'm not, I'm not responding. I've had a lot to drink and I'm watching Aussie rose football so yeah I think, but I think it's worth asking him, Lee. Just asking Edwin.
+Speaker 0
+We are given what happened at Norfolk and Norwich, Is he aware of anything that's site specific at Bournemouth? Yeah, that's correct, yeah and.
+Speaker 0
+You know, we're only putting it into test the there may well be the other things we'll have to not specifically around getting this version out but just in terms of upgrades generally we'll then have to look at you know does it many. Does putting this version in result in any interface changes that are necessary or if not necessary, anything that we might want to do 8.
+Speaker 0
+So yeah, if you send me the list of that, the database updates straight up before and yeah, I've sent them, well they should be on their teams chat, all right. Yeah, my source. So the chat pop ups, that's what that is thing. Yeah, I think most of them you have, they're probably just a couple that aren't there. But just run them all and it should be fine. Yeah, OK.
+Speaker 0
+And I just double checked, I did get it from the dev server. So yeah, that's where it is in the builds folder on there. And is that dev server just accessed with the way that we've always done it? Because I know they had moved the dev server to Azure. But yeah, I didn't do anything else to get onto it fine so it's still the old one that we're accessing. That's fine good.
+Speaker 0
+In an ideal world we're really we should have a backup of Bournemouth and do the upgrade ourselves and test that shouldn't we? Yeah so what we what we would normally do is then we'll you know it might be a sensible thing to.
+Speaker 0
+Create another environment of the database in Bournemouth itself and do it for because we'll have, I don't know how many environments we've actually got at Bournemouth, but we'll always have a live test and something else that will be there. So we can use one of the environments that they're not actively using. And it's probably a training environment left over from the project, I imagine.
+Speaker 0
+Yeah, I think that it's a very old version. Therefore, what's happened since then, What will happen when we're trying to upgrade? Yeah, exactly. It's always more of an effort, isn't it, upgrading from such a distance away. But yeah, and tests won't be the same as live, so we'll have to update test first so that it's the same as live before we do anything. And then, yeah, not be a pretty task, but.
+Speaker 0
+We need to set up instructions really don't we for upgrades and I don't know whether apps do you have anything, but there are definitely steps that they should be following isn't there? Yeah, definitely. And you know we had a brief discussion about it about seeing the leadership team meeting on Friday and you know how a our grades gonna be handled with the technical pool. Is that something that we just took into the technical pool and say look.
+Speaker 0
+You know if let's say Steve and Phil manage who is next in the line to be upgraded then do they just simply send a send a request into the technical pool And we felt that probably wasn't right because there is, it's not just a technical task is it to upgrade you need to do the discussion with the customer and make sure that all of these things are thought about and.
+Speaker 0
+There's a place for a bit of project management, bit of apps and as well as the technical stuff, so we haven't made a final decision on how that's gonna work yet for upgrade, but I wanna try and put some more structure around that. Yeah, you need to know a bit about the customer as well don't you? Cuz they will have some slightly unique aspects to them, don't they? They do.
+Speaker 0
+Ideally, it should be led by the project team and they should be picking up all the information and watching what the technical team are doing. But it's a project team liaison with a customer exactly yeah. So it's there's a few options that we have in terms of that, say the project team are a bit pushed in terms of implementing new systems, so have they got the resources to do it? Don't know. They'll never learn if not.
+Speaker 0
+I mean, if not, they'll end up doing their first one and it will be the very first one. Yeah, well, they know how to do the upgrades, that's not a problem. It's just the whether they've got the resources to do upgrades as well as the implementations. So, but yeah, it's in discussions shall we say. Anyway, at least this will be the, this will be the first. So we know what we're doing for this first one, don't we that?
+Speaker 0
+Effectively he's going to be acting as the project manager for it, making sure everything's done. Chloe's going to be the apps person and we'll initially pass it to technical pool to do the technical part of it. And obviously we'll be as a group product group will be helping Lee with that and seeing how that goes. And then I think from that will be useful, we can feed back.
+Speaker 0
+Specific issues and whose best play, what skill sets. We need to address those specific issues when we, get like a workflow for how we do upgrades. I don't know whether that needs to go in one of our policies, whether that's a scheduled release one, maybe as a appendices or something like that. Absolutely,
+Speaker 0
+Yeah i think that's one thing Lee as we you know once we move out of the testing phase and start deploying onto a onto a site. We need to document it to death and make sure that we, we've got all the processes down because that's the easy. It's easy so easy to miss a you know a quick task. That's an essential task and you just do it and you forget to document it so that you know when whoever does pick it up how's that? How's that.
+Speaker 0
+Experience documented. I haven't done these things before just but we have messed them up quite frequently. So is that? Also, are you happy with that one testingly? We'll catch up again next week. Made some good progress given that you were off for three days or so it's. I think it's progressing okay.
+Speaker 0
+Yep, I think that's, you know, testing done excellent. Theme structure. Don't know if there's anything we need to say. No, not really, just that. I've been speaking to Phil and Bob about the sales folder.
+Speaker 0
+And I had a chat to Bob yesterday about how to structure it in terms of where we've got primes and we've got multiple primes potentially. So just explain to Bob how it works and what he would like is so where we've got, say, Wales, he's asked if we could have different teams for the primes. And I said, yeah, that's fine, that could mean some duplication.
+Speaker 0
+Where we get information from the primes. But he said he's happy with that because actually we sometimes get slightly different information from each prime. So at least we know what we've actually got from who. And he doesn't mind moving between games during that procurement process and knows that the documents will be in separate games and then we'll just archive the ones that don't go forward and which sounds sensible and then where we've got.
+Speaker 0
+Things like we've currently got GE who do Kimmick, but we're moving to Cetera. He's asked if they could be separate teams and then we might have to move some documentation from GE to Cetera at the point that Cetera goes live. And he's just worried about having a team with multiple channels.
+Speaker 0
+And some people are a bit careless about where they put things and know who's who and he's worried that documents might get sent out incorrectly. And I think we know who he's talking about there. And so I mean that's all fine. I just said to him it's obviously a little bit more spread out, but he's he would rather have the complete separation to try and keep that distinction. So is he thinking about having?
+Speaker 0
+So let's say Phillips, where we have multiple sites where they're the prime to be a like a Wales Phillips team. Yes, the B Wales Phillips team. So the name would have both of those in it. Yeah, we wouldn't, yeah. And then we'd have.
+Speaker 0
+Imperial Phillips, New Cross, Phillips. So they would be separate teams. Because I did explain we couldn't just have Phillips with everything underneath it. That doesn't work and I said that wouldn't work for support Eva, they'd never find things. So as long as the primes name is in the title of the team he's happy with that they all have to have separate customer like trust teams and rather than all come under the Phillips umbrella.
+Speaker 0
+It's as you said, it means quite a lot more teams, doesn't it? But that means each team is simpler. So it's six and two. Yeah, exactly. And I've spoken to Phil about sort of document packs that they put out and I said what we wanna avoid is Bob having local copies of everything. I said that's fine if you wanna store what's actually been sent to the customer. But Bob needs to learn not to keep going back to that place to get the documents. So, i've said what I'll.
+Speaker 0
+Do is like a single document with hyperlinks to their regularly used ones and that will be the central point for them to go and get things to save them searching around in another team. So yeah, we're gonna trial that, he said. That sounded sensible. So he's gonna send me a list of what they regularly use and then once we've put the documents where they're gonna live, I can put that together for them and I can pin it to their to their team. So it's easily accessible, yeah.
+Speaker 0
+Okey Dokey sounds good yeah that man in the West is the biggest one that I have problems with him because he just randomly picks one up that he's used in the past and sends it out to the customer and then you see have multiple meetings to try and explain. Yes, I know that says that, but that's not what we do now.
+Speaker 0
+Yeah and the other thing is Australia. I think I'm gonna, we need to pin Bob down and get him to make a final decision on that 'cause I don't wanna keep doing things and asking questions if actually it's irrelevant because if Australia aren't part of the of our system, I can just set up all of those teams so that they're not private. So as soon as anyone's added to our account, they get access to them. But I don't know or no need to check is if that includes guest access because so we don't want guests having access to all of those. No absolutely yeah yes, it's you should find a think of the best way to guide Bob because we can.
+Speaker 0
+Getting to make the right decision. If we just tell him this is the right thing, can't we? Yeah and I need to know because they will need access to things like technical pool and. Yeah, exactly. And I can't use the shared team because then we can't use planner, 'cause planner doesn't work in a shared team. So yeah, I need to know what we're doing to know how to set things up. And I don't wanna keep going back and forth between things, 'cause it's.
+Speaker 0
+No, we need to make a decision as you said doing that twice, three times. So yeah, when we, I suppose when we say they need access to technical pool to there, who's they? They need to be able to submit requests to the technical pool perhaps, but they can do that on the on a we could give them a web browser to do that web form, couldn't we?
+Speaker 0
+Yeah, I'm just thinking all the technical knowledge is gonna be saved in there as well. Yeah, so that needs to be. Maybe that doesn't need to be in there. Do we? Do we say that we put things like technical documents in? Still difficult, isn't it? Yeah, because we don't wanna make it hard for our team just for Australia's sake. It makes sense to have technical documentation in the team.
+Speaker 0
+Sort of the technical teams, isn't it? There was just getting that team right doesn't it Because even within yeah UK if it if they we don't want that to be a silo of stuff that nobody else has access to thinking about us for example. If we want you want to be able to access that documentation. Yeah and I've opened it. It's gonna be at that moment it's an open team for everyone and.
+Speaker 0
+Apart from maybe like D and those sorts of people who definitely don't need it. But yeah that was my plan. But yeah I might need to rethink it based on Australia. I just the way I'm I was thinking like the posts would just replace the massive. They obviously are apart the massive that sort of thing as well. It was gonna just be a technical forum with.
+Speaker 0
+Knowledge base and all of that sort of stuff in the one place. So that almost becomes not quite but almost a public group, doesn't it? It's because you it sounds that if they're if they're considered outside, yeah, I guess it's just, yeah funny if we know the decision point then we can.
+Speaker 0
+I'm sure there's a way to do it but I just don't know how to do it cuz I don't know what's happening. So the I think where he'll be from the discussions we've had is that he's adamant he doesn't want Australia to be any part of the UK organization, but.
+Speaker 0
+There's obviously Steve does occasionally do some work for us and as you say it's kind of part of the technical team. Now the way I'm trying to get him to approach that is that from a data protection point of view, he actually shouldn't have any access to UK sites at all because there's no reciprocal data agreement with Australia. So then they're not allowed to see UK data,
+Speaker 0
+So there is a way around that is that he can have a UK contract as well as his Australian one and maybe John can as well. Yes, John does occasionally do work for us as well. So I'm thinking that is that the structure that we actually want to build where we say Yep, Australia have zero access to anything that we're doing.
+Speaker 0
+But anybody who has a UK contract, of course is a member of the UK team. So John would have a John and Steve Wheeler would have their access into our system by being UK employees. They just happen to work in Australia. Yeah, it makes it way easier if they're not in there and unless they have got access because then I don't have to lock down all of the teams. And yeah, automatic adding of new staff is.
+Speaker 0
+They just get added to them or we don't have to worry about this dynamic membership sort of thing And no exactly. I think I think that would be the that would be the if you like the operational decision. So leaving aside what might be possible and all the rest of it if we were you know we were trying to we've always been trying to get an operational decision that senior management team as to what they want this, how they want this to work. So I think that's gonna be it is that Australia separate.
+Speaker 0
+Note some of the Australian people will be given UK contracts and therefore we just treat them as UK people. Yeah the issue is the only thing that's still scratching where the back of my head is that are they full UK people you know because that because and I should, I think it should be OK because obviously they then would have we would then want them to have everything that an ordinary you know that steve should have the same access as, let's say, Rob Dibson or somebody like that because they're doing similar work, but that would give him access to all of the UK sites, but that would be OK.
+Speaker 0
+Because he then would have a UK contract any degree to UK terms and conditions and GDPR and all the rest of it. So I think that would work fine that we do it on that basis that defines specific people become English for a temporary purpose yeah would they need so will they. They're an Australian company. Would they be expected to use the same templates and document formats that we use and where's and all of that? Because they'd need access to that as well I'm guessing, wouldn't they?
+Speaker 0
+Yeah and John would have access to that then through that method, wouldn't he. So he could be the conduit for that yeah and which is tends to be what we do anywhere now. So they they'll they do localize them, but they take ours as the template yeah. So I would imagine what John lend up doing is creating his own teams. I would imagine Steve will badger him into having.
+Speaker 0
+An Azure license in Australia as well, because I know they've got a. It makes sense for them to look at cloud deployment of the system as well because they've got a couple of projects. At the minute they're mandating cloud deployment, so.
+Speaker 0
+I haven't had spoken to Ed about it yet, but that was my thought is to give them the headache of testing all of that yeah it makes it much easier for me if that is the decision we make and then they've got access to what they need via John and potentially Steve and I can just not worry about having to give them accounts or hide things away. I think that's gotta be right, hasn't it. It's let's we'll.
+Speaker 0
+Gently massage Bob into that decision on Thursday when we meet. Yeah and then yeah and then it'll be day's job to sort out some sort of UK contract with them but she needs to do that for you know for GDPR and everything else anyway. So and I know that's difficult because it create, it makes it difficult for the employee then because they have to pay UK tax and Australian tax and.
+Speaker 0
+Then there's plenty of people do that. Yeah, It allows them to be creative and say that, no i didn't learn that there. I entered over there and all the rest of that. Bob will still need access to all the Australian stuff, so that'll have to be somewhere where he can get to it, right. Yeah, Yes, exactly. That was, I guess that's the other side is that.
+Speaker 0
+Do we still end up, do we still end up with a team for CHQ for example and the Australian projects that but they but it's only accessible by but also in the UK and John and whoever else, Yeah that might be quite difficult for them I guess if there's sort of working projects, yeah and I think that would that would then.
+Speaker 0
+Lead them, you know, push them into getting their own tenant of Azure and setting up their own Teams account. And then we could share across, couldn't we? Yeah, because we can set up sharing between the two of us. So they could give Bob guests access to a team or whatever, can't they? Yeah, exactly. So I think, I think it's fair enough to say, yeah, OK, we'll have those teams in our structure because we need that.
+Speaker 0
+And but for the time being, only John and whoever else they decide to do this for would have access to that, and they'll just have to copy documentation out for the time being. But once we've once they've got their own set up, we can actually trust each of those domains, and now the only.
+Speaker 0
+Issue there is with emails. Isn't the email addresses yeah, someone needs to speak to names Karen, find out what happens and which has been on Bob's list for a while but not done. Is that on boards rather than mats to do that? It's sort of both, but yeah, neither of them have done anything about it because we also need to tell them what we're doing in general anyway, because I don't know what their lead time is for a cut over. I'm sure they can't just do it when we decide.
+Speaker 0
+We want to do it. We need to plan it with them, I imagine. I just think I did it on a minor, minor scale because I moved email accounts from one to the other and you actually do it yourself, which is really scary. You just change the MX records and your email doesn't work for a short period of time and then eventually it does again in your new system. So the so it's relatively easy though. Scary to do, but.
+Speaker 0
+It's whether we can do it account by account. If they want to keep using names, Cool. We just wanna close off certain accounts. Which comes back to the question that we asked right at the beginning, wasn't it of all of this? Is that possible? yeah. Because if you want, if you wanna move all of them, that's not a problem. If you wanna move just a few of them, that is a problem, yeah.
+Speaker 0
+And if it goes horribly wrong, we will need someone in their support team to be available to us, I guess so, yeah, yes, indeed. So yeah, definitely part of it the cutover plan. And then Matt was, yeah, we'll see if we can push them into doing it.
+Speaker 0
+Going back to technical pool, although we originally Ed said to Matt not to put his Azure 3-6-5 tasks in the technical pool, he has now agreed that he will put them in the technical pool. Because I said because how can you? It's not fair to Matt to be giving him loads of technical pool tasks and not to have visibility of the fact that he's already snored under with tasks that we have given him. So they need to go into there and.
+Speaker 0
+I wonder whether when Ed's back actually, we should give Ed all the tasks that Matt needs to do. Because Matt won't give Ed all the tasks that you've given him. I'm sure it'll just give him the next one. So the next two or three or something like that only, yeah, I can do that. And then they can see how much he has got to do yeah i mean, that might be a dose of reality that's worth doing yeah we'll have the meeting this week and see if Matt's managed to do any of the ones on his list for the past three weeks. And then, i'll see what's leftover and do a list of them. yeah. And then it's, we'll give that to Ed. I know Dan's picking up technical pool stuff while Ed's off, but we'll do it when Ed's back and then it's because he can.
+Speaker 0
+Allocate Max, Max, work out, okay. So that's team structure, etc. Sales, bids, updates. Well, pardon me, I haven't. I want to rack my brains if I've got anything new that's going on.
+Speaker 0
+Nothing particularly. Obviously we've got UK IO coming up in a couple of weeks, so where we are with that at the minutes, Steve's kind of on standby because he's within reasonable striking distance of the place. So and Steve, I think you just work with Bob on that and see when he wants you, wants you to be there or if you want to go anywhere then there's nothing stopping you going. And it's not to say that I might going one of the days anyway exactly we've never wander around and I've got some of the.
+Speaker 0
+Bob asked me to invite some people from Liverpool. So I have done just one customers. So they've got, I don't know if you know, you might know but Bob got a hold of ten three passes. For customers. Yes yeah. So he asked me if I could find a couple people, which I have done from the Liverpool region to go in. Yeah, OK, yeah, So yeah, clear that by ear as it suits you and see how busy we are.
+Speaker 0
+Heavy's now doing the Wednesday so I'll probably not go because we've got we've got the presentation to Wales on infrastructure and the like and interfacing on the Thursday haven't we And there's so that's the I was gonna mention that sorry that's just on the masturbation index. It's yeah yes. So I was gonna bring.
+Speaker 0
+We're seeing on that. If you've got mine, 'cause it's the balancing act. I don't want to leave you out of Wales, Brickley. I don't want to overload you in diary either. But yeah, if I'm not, if I can do it, then yeah, I should. I think I'm all right early for Thursday. I've just got the same meetings as you have thursday yeah. So it's, so what we're doing with that, I sent you a link this morning, which hopefully works yeah to video. Summer lives to watch after this yeah.
+Speaker 0
+So that's so that's the meeting that happened last week that Steve was at and Maggie was at as well. So that'd be worth watching now. Watch that this afternoon for a bit of background where I'll add you to a meeting that I'm trying to set up with Ed. Obviously it's guest work as to whether it'll be available.
+Speaker 0
+Because they want us to do a presentation next Thursday next no, it's the week. It's the Thursday of UKRC. Isn't it nice? That is correct, isn't it? So we've got next weekend's back. So we need to do some prep next week. With what? How we think the MPI should work or at least some options there and a preferred option. So I'll send you an invite to.
+Speaker 0
+The meeting date that I'm suggesting that we have with Ed and then we'll I'll also send you a meeting invite for the session with Wales because i'm off on proper holiday after the after that meeting so i'm off on the Friday. So i won't be able to follow up on any of the task just so that two of you are aware of it rather than just one that'd be good.
+Speaker 0
+If I managed to breathe for that long. Any others? hello hello can you hear me? Yeah, I can hear you keep breaking up with something. My side of your husband, It's probably my voice. He's also breaking up for me steve everything's stuttering. I thought it was just me. Ok, Maybe shouldn't be Internet here, but you never know. Is it sounding OK at the minute you're back? Yeah OK right. Anything else sales wise that you're aware of, Steve?
+Speaker 0
+You know, another conversation with Phil regarding the LPP questionnaire, they are going to respond to it. But he asked me about the diacom stuff that you commented on. So I filled him in with that and said, well, we don't comply. What do you want to say? And they were going away to him and Bob were going away to decide how they were going to respond.
+Speaker 0
+Along the lines, if this doesn't really work for radiology only or specifically for reason anyway don't mandate all of these. Yes, exactly. And it's they put it to be honest I think they're putting a lot more effort into it than I would have done but that's fine I guess it's hopefully it might pay off that because Bob's going through the contract line by line and it's only the comment at this stage. So but yeah good on him he's making a lot of detailed comment about it so.
+Speaker 0
+Yeah, yes, exactly okay yeah. So we've got nothing pressing. Anyway, I don't think other than that bit of work for Wales on the MPI in terms of dates for Wales it's still all pushing back because they have we haven't got.
+Speaker 0
+Any signed contract or flow down contract or anything yet because we haven't, we have Phillips haven't got their contract yet so we haven't got ours and we haven't got any call off orders yet from individual health boards. So and no real date when we're looking to get those. Phillips are thinking about July for the first one and then that'll be the real starting gun fired on getting things to happen.
+Speaker 0
+So yeah, they're not, they're not wanting servers built or anything yet, which is good because we're still worry about us doing that. But similarly, deployment projects, nothing that I'm desperately involved with other than Wales.
+Speaker 0
+I was gonna mention a few yeah. There's a request for an MSC. Msc call that's been sent to us and Maggie. And is that this afternoon? Yeah i don't know what they've been told. I ran Bob about that one because I just had it mysteriously appear into my diary. And So what? Apparently what's going to happen?
+Speaker 0
+Is the what that's about is that Bob's already had one call with Stuart and the contracts guy at MSA knocked Kieran and apparently the trust have fallen out with Kieran because they're sick of him just blocking this probe, this project, because they they've realized that it's him that's blocking it, not horse. So there's been a bit of bit of fighting there, apparently.
+Speaker 0
+So Bob reckons that there's now an agreed position on all of the outstanding issues, and today's meeting is just to agree those positions and get it all documented into a CCN. So he's not expecting a big fight because it's all around.
+Speaker 0
+Where we've where we've said something isn't happening yet like you know we've agreed to this minimal functionality mobile web type product and we've said that it won't be available until the end of the year. Then we just need to say that the right, OK it's the end of the year and that's the date that we're sticking to and if they if they come on and start talking about.
+Speaker 0
+Report priority and all the rest of it then yeah, I'm just gonna say the system works as it works. You're not using it. How the system works and therefore you've got a problem, we can't change it. It's fundamental to how the system works. If you if you wanna put a feature suggestion in, you know after you've because the whole point is we're trying to get them technically live and into support and paying some money.
+Speaker 0
+So you know, that's the position we if we just can't change that. If you want to put some suggestions in and have a discussion with us afterwards, fine. But yeah, the likelihood of changing is remote. But we might be able to find a workaround or something like that. Yeah, they have got, tickets for all of those ones that are on that list, 'cause I made sure they were all there and before we went through them all. So yeah, they have got requests for all of those, but they're just feature suggestions on the portal fine that's perfect. So, we'll just say other the feature suggestions, we may or may not get round to looking at them and doing anything about them yeah do you want me on that call? Because I wasn't sure whether you wanted me on there or whether you wanted to keep it yourself. And Maggie and i don't mind. You know, obviously you've got a lot of useful background on it. so it would always be better to have you on there. But equally, you know, if you're busy, it's fine and you can do other things. Yeah i just didn't wanna be on it if it was sort of senior management and there's gonna be stuff on there that I shouldn't be listening to. So not at all. So yeah, definitely. I accept that Then from my point of view, it's a call where you can get a few emails done. Yeah, no problem.
+Speaker 0
+Yes, that's MSC. Yeah, southwest London. There's another meeting request from Bob to go over some bits and I don't really know a lot about southwest London. So I don't have I been invited to that. Was I on that one? yes. So there was a slide deck that Bob sent through.
+Speaker 0
+And then it's to do with change Healthcare, basically not being able to deliver everything they promised. And now they want us to do everything. But that's not in our contract to do it no absolutely. When's the Nothing's been set yet. The last email was Maggie asking Bob, when do you want to have an internal call? That's right. I saw that email Yeah. Do you want me on that one as well? I'm happy to be. I just.
+Speaker 0
+You might as well, just with the fact that I'm gonna be off for a week, that's all yeah and just so that you're aware of what's going on. Yeah, I'll wait and see when a date gets arranged. But yeah, I'll join it. Yeah i think so. It's mainly gonna be around this voice recognition and various things like that as to what we're gonna do but yeah i think from what Bob was and Bob gets a bit modeled, but it sounded like they wanted to do peer review in packs and Riz, they wanted to do MDT impacts and Riz and I was like well, they can't. They wanted, yeah, they wanted to report in both but not be very defined about what gets done in what. And again, I said they can't do that. Yeah, and this has been the problem all the way through is that they've got a couple of radiologists who, you know, saying, well, we shouldn't have to decide.
+Speaker 0
+Now what we're doing it should be 1 system and be flexible. Well should have bought 1 system then you've bought separate systems and that's they work differently and yeah and if you want any sort of form of audit you're gonna have to choose aren't you? You can't do and or stats. You can't do half in half. It just doesn't work does it? No you have to make.
+Speaker 0
+They have to configure both systems to be identical, and I assume that's totally impossible. So yeah, given that change healthcare's probably doesn't exist, maybe. Yeah, that was about to say you can't configure something that isn't there. That is the other part of the problem. Yeah, OK, no worries. Yeah, we'll see when that comes out. Yeah, fine. Any other.
+Speaker 0
+Deployment just gonna mention the north. I know this is in AAB but it's sort of deployment north, Central ICS. I think someone was gonna email you about the clinical safety queries. They didn't mention them on the call. They just said and that the they wanted to talk to you about them and yeah, but didn't go into detail about what they were. But no i had a email from.
+Speaker 0
+The guy that from there yesterday. So that's actually I've arranged it but it's only he's only put it in the diary for half an hour so I'll just do that myself tomorrow. I worry if there's anything comes out of it then I'll let you and Le know if there's anything we need to do. But I'm just gonna show him the usual documentation that we do. One thing we might have to do at some point Le is sort of.
+Speaker 0
+Brand version of our safety documentation up as Share Plus rather than Radiology Plus. It's effectively the same, No problem. Then I was gonna mention Dr. Doctor, just a quick to update that we met with John last week. It sounds like there's different phases, so they're just gonna use it for a SMS appointment in my mind as phase one okay and the last phase will be bidirectional scheduling information, but Synotech are gonna continue to do all the letters and so we don't need to worry about that part of it with Doctor Doctor, but we'll have a bit more of a chat with them.
+Speaker 0
+This week there's a call tomorrow or yeah, tomorrow with doctor doctor. Just to go over that and just try and find out what we need to quote for. Because at the moment I can't see a need for demographics feed and but there's also no orders feed so I don't know how they're gonna know what they're scheduling and if they don't know what they're scheduling has of any what room to put it into.
+Speaker 0
+And they asked for an MFM feed, but that's to keep things like clinics up to date, which I was going to discuss with them on the call because that might just be something that John manages manually. There's not going to be huge room changes or anything like that. I don't know why they would need a feed. It's not like we have clinics, It's.
+Speaker 0
+And yeah, again, it's their understanding of these companies, isn't it? They're used to doing outpatient clinics and blood clinics and things like that. So yeah, so it rather than have another feed that's gonna basically not be very busy and charge them for it just seems that it might be something John would happily manage manually. So it might just be, SIU and orders. But they haven't mentioned orders. So I just need to talk to them about that. yeah.
+Speaker 0
+I think they do have electronic ordering, but not from memory. They don't use it very much. I think it's there, but they've got a lot of paper based workflows. Yeah so that's some conversation to add and then we'll know what we can, what we should be quoting for. Yeah, cool yeah that was all the deployment stuff and that, yeah.
+Speaker 0
+So tickets, yes, Steve asked me about this one. It sounds like Charles Wesson moving their tie into the cloud, so they wanted us to quote them for changing destination IPS. But I didn't know whether there was anything else that we need to say in that quote around performance or anything like that.
+Speaker 0
+I don't really know about ties and the client would so I didn't wanna say just quote it and yet we'll do the work. I didn't know whether it needed a discussion with them to talk about it I think so I think it's certainly worth making them aware that that's not something we've, I'm gonna say ever done I suppose MSC with our integrations kind of go in and out of the cloud and we know that that's kind of works but.
+Speaker 0
+Yeah, we probably do need to make them aware and that we won't be liable for any Slas. I think might just do to drop an email to Steve Green copying Bob. Do you want me to do it? Yeah i wasn't sure what to say to them. But yeah, it felt like I couldn't just let him go ahead and do a quake. There was a bit more to it than that yeah. Is it the entire trust?
+Speaker 0
+Tie that's going into the cloud, it sounds like it from the ticket number. So you would, I mean you would assume they've got to have the performance right or everything would stop to some extent. You should still caveat it that yeah just suggest it's going to have to work. It is we just as you say it's just getting the caveat on there so they don't come back to us and saying which it's your fault.
+Speaker 0
+Yeah. Cover ourselves with what I was thinking, that's 6-3-9-3-2 OK, just on that one, it begs the question, I assume we're still networking into the trust and the trust taking care of the tile links.
+Speaker 0
+Or do we have to network ourselves to the cloud? Again, look at worth putting on the caveat, isn't it, that we assume it's just a, that our interface stays where it is and they're just giving us a different endpoint to connect to. They've got, we've supplied hardware that sits in their hospital and another data center. We yeah, it's just making sure that we don't have to move any of that, yeah.
+Speaker 0
+I'll have a good look at the ticket as well, see if there's anything else we need to need to say. Matt hasn't got back to me about just because it's chair west about the backup of the data, so I was just going to ask him tomorrow when he's on the call. Just tag that onto the end.
+Speaker 0
+Okay team tasks, I think we're kind of covered that as well going along and my voice is giving it. And then AOB, we've got Tracy's projects.
+Speaker 0
+Some of those I've done in the in the agenda so and Medical Island, they've obviously come back to us and said they're more or less happy with that. Well, they are happy with the functional spec. I've kind of started a technical spec as well, but probably want to go through both with someone in development so that we can get a time estimate for the quote and it's off at the moment but.
+Speaker 0
+Should it be add for something like that or is it Edwin? I wasn't sure who I should speak to. I would send it to Edwin in the first instance. Particularly that's been Office. I think he's realized and realized that he's overworking himself. And I think when he comes back, he's gonna try and get Edwin to take a bit more responsibility for things. So, yeah. Ok then. Yeah, I'll just try. Do you want to be on that? I'll probably have a call to go through it with them once they're reviewed it. Do you want to be on that or are you happy for me to do it? I'm happy for you to do it if you know, if you want me there, happy to be. But I'll send it to you. And then you can be optional if you want to, then you can, yeah.
+Speaker 0
+Ok, no worries. We'll do that. And you were happy with basic sort of what I was proposing anyway though. Yeah, definitely. Yeah, that's fine. Ok, statistics, user settings. So we Carrie, tested these and there was some queries that came back and just wasn't hundred percent % how they should work.
+Speaker 0
+I'll just get my application up and just load them so that everyone knows what I'm talking about. So in user config we have a couple of settings. Then what Kerry's done is tested all combinations of these two to make sure that they work as he is expected but.
+Speaker 0
+And we're not hundred percent % how one of them should work. So if the user has Dave rights as none and run only when they go to stats, what should they be able to do? The Kerry saying that they should be able to configure a stat and run it but not save it. And I was saying, well if they this would be.
+Speaker 0
+How I would see someone with no training in stats, How you would set them up? So should they actually be able to create a stat in the 1st place if they can't stave it? Because when we start to look at auditing stats, if they've just won some random query are we is that going to cause us an issue? So it's really that save rights? None should they be able to?
+Speaker 0
+Create and run a query but not save it? Or should they just not be able to do anything except run what's already there? In my head I think the latter. I think they should just be able to run what's already there. Because you're right, it was originally designed that system manager might set the queries up and then and then in departmental manager might actually have the rights to go in and run them but not play with them i think.
+Speaker 0
+I don't know whether it was done deliberately or whether it was just accidental that it was set up as it as you as Kerry has found yeah and some people kind of found that useful, but I don't think it should be. I think it we should fix that loophole really, and just say we're going to remove this new button. said by these people yeah so they effectively it becomes what's it say? It says save what? What was the permission saved? I think my speech version's broken. Still I'm fixing it there really the statistics save, right? So really it should be edit rights, would you say? Is it to maintain the terminology because.
+Speaker 0
+Statistics save and because it creation rights. Yeah I think so it's i was trying to think of a short word because clearly they're struggling on that page. Stats you could call it couldn't you stats create rights.
+Speaker 0
+I guess then we'd have to change the other one really starts from rights, so they look the same. Yeah, that's a small thing, isn't it? And hopefully, yeah, so that what we were proposing is that we'd remove this new button if you didn't have rights. Yeah, that was set to none. And should that apply to work? List that support and dashboard. So if you can't, if you don't have rights to do anything, you shouldn't be able to do any of these things correct yeah. Would agree. Yeah because I was thinking someone that doesn't have any training, they could create themselves a stat and completely cock it up and get an export of something they think is right but it's just completely wrong. I can't run it for the length last 10 years as well of course. Yeah, and slow the system up. So it just seems yeah, if you if you can't save something, I just don't think you should be able to run something unless just a loophole in the 1st place. So I suspect it may well annoy a few people when it goes in, but there's valid logic for doing it. As you say, audit is another valid reason for doing that, isn't it? yeah.
+Speaker 0
+It's not big. The question if it's needed, it's needed at all. Then isn't there an overarching stats that said you've got stats rights or no? No, because they want to. So setting up a stat is quite a complex process and then you need some understanding of the of you know a lot point and click, you still need to know.
+Speaker 0
+What the fields mean and what the tables where in what where this how to connect it. But just running it is really useful and it's one of the idiosyncrasies if you like or just plain bad. Design of our stat system is that you have to have stats access to run a stat. You can't. You can't run it from any other part of the application. That might be better explanation is it ones run only and you're just creating run.
+Speaker 0
+Exactly, yeah. So that's effectively what we're doing there, that you can create an edit or you can just run them. So the statistics, yeah.
+Speaker 0
+And the other one that I think doesn't get used in statistics because Bob could never get his head around it was that we always set the statistics module up with all of the with the options optional levels. But I know Bob always just says stats is everything. The difficulty with that is the dashboard function was only ever mentioned. It's supposed to be a demo to me. But it actually got put into a live version and therefore it's been there forever more so and really, but I think we should be putting it in without the dashboard functionality. But enough people have got it. Now suppose, yeah, we can demonstrate something that's really rubbish. Here you go. Yeah, exactly, exactly yeah suppose so everybody tries it once and doesn't like it.
+Speaker 0
+To be fair, actually, how share to use it for some of their capacity planning and the yeah, the demands they have they are using it but it's any useful for the people that have got access to it. So they're having to just show people it. Yeah exactly. It's a bit annoying it's been on the road map and moved off the road map off every year to sort that. So not centralized. Yes,
+Speaker 0
+We did. Yeah, I've got a couple of others, but I'll let someone else talk for a bit. So these ones for review, talk me through that top one workflow and outcome of AI integration issue from Steve.
+Speaker 0
+Tracy, that was something that you mentioned in last week's meeting. Pick up the contents of it. Is it? Look at the notes. Our last meeting. Yeah, I'm just gonna. Look, it was Steve had asked you about something and you were gonna follow up with him. Not our steve Gray.
+Speaker 0
+Yeah, I did. I had a meeting that was, behold, north. Mids so I spoke to them and I just.
+Speaker 0
+Talked to the person at the Trust who weirdly used to work at Lewisham. When he came on the call I was like hello and just told them to go away and read the spec from behold before they commit to buying anything and just make sure they're happy with what behold we're proposing to do. The fact that it would be bidirectional, that they'd want the results back. I was like are you happy for them to have all your reports and?
+Speaker 0
+Are you happy that they're going to auto report? Maybe you need to have a discussion with them about that and your clinical safety people. Yeah, so I just pointed those bits out. So go through the spec. I said this doesn't involve any prioritization in the application. It's just a matter of adding flags that match those AI priorities that we get from Behold and because that's what we're doing at MSC, we're not using the Grampian stuff so.
+Speaker 0
+That's all it will be. So yeah, they're gonna go and look at that and whether you saw Behold on the TV yesterday the you know they were having, I can't remember which one of our trusts that we're doing something with. But they were in York one of the Yorkshire hospitals yesterday as well and behold and dragging around various.
+Speaker 0
+Mainly Labor politicians, actually with a with a their. Obviously their view is that they're going to be the next government because they're dragging senior shadow ministers around all the hospitals and showing off how marvelous Behold is and how it can save the NHS. There you go.
+Speaker 0
+Results of end to end test, just going through the reviews again, results of end to end testing. We've done team structure for Australia, we've done allocation of that's time we wish we could do and identification of a technical person for project management tasks, have we done that? Was that relation to upgrades that was about going forward with teams and who's?
+Speaker 0
+Going to manage the project, I did, yes, good point. I did mention that at the management meeting and again we with various people being off because Ed was off with this one and then we couldn't make really any progress with it, but it'll go as an agenda item on the next.
+Speaker 0
+Main monthly management meeting as to who's going to be running with technical management of it. But we did say that initially Dee would do the if you like operational management of it, you know stuff that isn't non-technical management of teams. Obviously after it's gone live and there's been a bedding in period and everybody's happy with it, but once it's business as usual then.
+Speaker 0
+Actually, will relieve Tracy of that onerous task. Yeah, I'm sure, like there's better use of my time than setting up new teams and channels. Yes, exactly. Single side to the thing you want to go just to use in Outlook again. After all this, I'm sick of the site of it because it could be live. Yeah, that. That's the annoying thing, is it? It's so useful, isn't it? Yeah, and that yeah so we've got a shared SharePoint.
+Speaker 0
+Channel with Phillips now for Wales that's seems to be working quite well. It's one they set up. Yeah one they set up. So it's into Phillips's. Yeah infrastructure and it's named user permissions. So Rubble has to give anybody access that's I haven't asked him for yours yet Steve. I was hit saving that excitement excitement.
+Speaker 0
+And you let Steve Jessup have access to the phillips Social system. Yeah, thanks for that. I just had a couple of other ones sorry. There's just an email that came from University Hospitals daughter Dorset about Requests Plus.
+Speaker 0
+And that Bob had sent and asked one of us to reply to that. They mentioned diagrams on it. So I haven't responded. Yes, I have that on my yeah OK Just to make sure it's all list to do. Yeah i'm just looking how far is it like I'll get around to it at any point. Request plus. Is that the one? No let me see what Bob called it.
+Speaker 0
+Can you just remember still. Yeah, that one, Yeah, that's it. Yeah, so that's, i know that we support them in the application now 'cause Edwin developed it for, someone that didn't actually need it, 'cause he hadn't read the comments on the RFC,
+Speaker 0
+But yeah, I don't think we do it for the request part yet, do you not? No, not at all. As you say that there's a bit in completion that doesn't work. But but. And it does, but it's as clunky as you like. Ok. So I'll just respond to that and say no. Yeah, right. And then the only other one I was gonna mention was technical pull.
+Speaker 0
+I've got requests outstanding. I've tried to email. I was gonna mention on yesterday's call for the share, but that went on a bit long and I did. There were more important things, but i've emailed Ed and Dan to let them know what I've got. I've then what's that Dan to say? Can I have an update? And I just don't know if they're even in the technical form or where they sit in the priorities. I've got no idea.
+Speaker 0
+Ok. I don't know what to do. Well, we did ask, did ask this on Friday and obviously Ed wasn't there, but Dan was. And we said, you know what, how do we find out the progress of a task, where it is, what its priority is, what, when's it likely to be done? And he said email. Him So you've done that, so.
+Speaker 0
+And I didn't know whether we should collate all of ours weekly like we do with the dev ones, just so that we can get like a an update back to all of us and rather than individual updates, or whether we should all be hassling him. I didn't know. I guess if they're not terribly urgent then a weekly, a weekly can you update on this bunch would be.
+Speaker 0
+Sufficient, wouldn't it? Obviously if any individuals got something that they desperately need doing then they can do it direct, but don't think if we can check with Danbra, I think he would prefer that I would imagine yeah. The ones I'm waiting for are all northwest London ones as well so they're obviously all poo pack ones, some of which not even my blinking tickets but seems to stuck with me to chase.
+Speaker 0
+We did talk about and because we did talk about do we get more licenses to because he's used the licensed version of Trello so that he's got more tools to be able to do some of the prioritization logic, yeah, and we didn't really want to buy loads of licenses for that for a temporary no of course, temporary thing.
+Speaker 0
+And the trouble is that if you put too much investment into that it becomes the permanent solution and you never get. It properly into teams. So yeah, I think once it moves into teams. It'll be a lot easier. You'll have visibility of where things are and you can just chase things that you think are further down than they should be yeah. But for now, yeah, because I'm we've got that meeting with pupak this week and I know she's gonna ask me again. It'll be on the agenda.
+Speaker 0
+Yeah I would you do me a favor and forward me that invite, Tracy, because i it's not in my calendar and at some point in time when I was moving calendars over that one disappeared that series whole series and.
+Speaker 0
+I know she was gonna send it again and she didn't. She doesn't do them as a series, does she? She tested them as individuals, for God sake. That's probably why we should. I will yeah after this, I'll go through and I'll let me send that one and then I'll try and go through and send them all to you. She doesn't do that.
+Speaker 0
+Which? Which one would you prefer me to send them to using your Microsoft one? Yeah, it doesn't matter. I've got it set. So it'll go in anywhere. Now, whichever one I get it from. So, OK, yeah, OK, that's this week's. And then I'll go through and I'll find the others for you and send them. Yeah, I'll drop Max. I'll drop down an email and just ask him to have a look at those because we'll need to.
+Speaker 0
+Respond to food packet. Yeah, So I was gonna mention them in the northwest London call, which is where I thought that I can sort of pick them up, but it was just quite busy with other stuff so I didn't wanna keep everyone on the call for longer. So I've got one thing that I want to know bearing them on that I was on leave last week. So how did Norfolk and Norwich get version 3 4?
+Speaker 0
+I don't know all the ins and outs I must say, but some obviously the version was just in, I assume in a in the list of builds and somebody just thought, well, I'll take the most up to date, they took it from the dev server instead of from the common builds and the sync, but I don't know. I didn't think everyone had access to the dev server, but obviously they do.
+Speaker 0
+Yeah, so I've just sent him an order saying I just sent a quick response. There's no point sort of picking over the bones of who did what. But at the same time, we need to need to have a policy, a proper policy that says this is if it's not been released yet.
+Speaker 0
+It has to be held somewhere where nobody can accidentally get to it. And the other side of it being there should be a change management process that says what version am I gonna put in to this site and it's decided. And then somebody should realize that if they've been told to put 3 3 in then and they see something with 3 4 then that's not the right so.
+Speaker 0
+Hopefully through ISO. It's a good example of it's quite useful really isn't it? Because it's a good yeah, it's a good story to fall back on and say no, what we're doing doesn't work. You do have to change and do they still have access to 3 4 or is it being taken away from them now who? No fucking Norwich, yes.
+Speaker 0
+I assume that's been reversed. I don't know. Yeah, because that's how we knew that the DTI didn't work. That had to be rolled back yeah so that would have just been the first of many if that continued trying to get that to work. What surprises me is that the customer before having a version upgrade didn't ask for release notes. Yeah, good point. They probably gave them somebody. It's a different version.
+Speaker 0
+Yeah, they probably had the release notes for what version they had in test. They upgraded live to a different version to what they've been testing. So if they if they had been given the release notes, perhaps it means that they don't actually read the release notes. Well, they might have released because as I said, their release notes will have matched what they had in test, but then they didn't check the version number when it was upgraded.
+Speaker 0
+Into live. Yes, I'm going to give you this version and test and get you to test it, but then I'm going to give you a completely different version in your live application. We did well, didn't we? You shouldn't ask too many questions. I get the feeling here. No, that's entirely, entirely a sort of tone issue and the customer.
+Speaker 0
+Did they not say you've given us version now you've taken it away? What were they? What was their reaction? As I say, I haven't bothered looking into it. I've got more things to do, to be honest. That's whoever it's where was manager the person belongs to do that investigation and to deal with them appropriately.
+Speaker 0
+But the main thing for us is to get an ISO process in place, isn't it? Yeah, it highlighted something yeah dev server should only have limited access, shouldn't it? I don't think everyone should have access to the dev server. If that's our repository of versions, which it is, then absolutely yeah, we should have a it it's just it always gets cluttered up with all kinds of rubbish, doesn't it? so.
+Speaker 0
+But yeah, when? I don't know. We'll have to build that into the team structure. As to who has access to, a version repository. Yeah, perfect world. That should be tied up to change control as well. That's what I'm saying. Yeah, absolutely. It's so it's part of the change control process, isn't it? On site. And there should be a.
+Speaker 0
+Great fan of forms. We can make them electronic but then there needs to be something that's signed off that says right, this is your job sheet for this task is to take Norfolk Norwich live and the task is to just move 3 point, whatever it was, 3 from test to live. And then that's the task that is given and then the person who does the task signs that that's what they did.
+Speaker 0
+Not rocket science, just trying to what I was going to add to this meeting was an update for each week that I'll do an update from the senior management meeting or senior leadership team meetings.
+Speaker 0
+And probably the main thing is I'm sure a lot of people are aware but we will be getting 2 new members of staff from Phillips in June and July. Steve are probably best for you to describe their attributes and who they are, etcetera, because you know them, know them far better than I do yeah so we've got gareth Evans who was like the integration team for Phillips for all the Xds, but he's got a history goes back to Fuji where he's been heavily involved with integration through Fuji and I have a lot of time for Gareth. He definitely knows his stuff and he can be trusted with customers etcetera. So really looking forward to have Gareth back on the team and then also coming across is.
+Speaker 0
+David and David is as solid as a rock. He's an integration engineer who can be totally rely and relied on and also very good with customers. So yeah, Harrison, David coming across and I'm really sure they're both coming. Yeah and we've told.
+Speaker 0
+Phillips and certainly I can only for myself. I can only speak for the liaison meetings that we have every week with them and they've been perfectly happy about it. I think they say the positives that if you take Wales then they realize that you know, Wales is a big integration project for the risk primarily and that if Soliton have the resources to do that well then that will look good for Phillips. So I'm sure there are some people, yeah, I'm still absolutely baffled as to what Phillips are going to do with their existing XTS deployments, but there you go. Yeah, not Northwest London, but Liverpool particular.
+Speaker 0
+Yeah, Liverpool's probably the big one. I mean, we know what the as long as they've got somebody who can take it out, that's all that they're required to do for northwest London shortly. So do they know that yet? But about that conversation, Not formally, no i don't. They're aware informally exactly. Yeah, absolutely. I'm sure they're more than aware that that's the plan. And they're probably highly delighted, to be honest, given that they've got nobody to look after it yeah.
+Speaker 0
+So and with a lot of these problems that, you know, it's the Phillips axe that's not able to talk to the Phillips XDS system at the minute. And all right, Soloton are responsible for it contractually. But the irony is not lost on the customer. I don't think it wasn't in Liverpool Line, no.
+Speaker 0
+Yeah, that was the main thing as of this Fridays that they were though it was good to get those dates confirmed. I can't remember the exact dates. What one's June, one's July, just based on the notice period. David, you and Gareth july? yeah. And did I? I very quickly tried started playing that the video about the Wales meeting. But were the guys on that meeting? I think they were which guys David and Gareth thought no.
+Speaker 0
+On the from Phillips side, obviously there's probably about 5 or 6. Gareth Evans on the meeting in Wales, but no, I'm 99 % sure it wasn't. You've got me thinking, well yeah, I'm going to be watched anyway. So yeah, you know, don't think so. Gareth was really heavily involved in the original deployment of Radisson, Wales. He knows the Welsh, he lives in Cardiff.
+Speaker 0
+And his best mates with a lot of the people from the customer side on that call. So he's going, I mean he's going to be able to open a lot of doors and smooth a lot of, you know, just on that one to one basis is going to be brilliant in Wales. Yeah, absolutely. So, you know, obviously it's up to.
+Speaker 0
+Maggie and Ed how they, how they want to use people. But it's very things over a pint with his friends much easier than some of the formal routes occasionally and without several hundred miles worth of traveling as well. So yeah, gosh, he's based in Cardiff absolutely Yeah. Does he speak Welsh, by the way? Yeah, I don't think he does. But he is welsh yeah. Just is that Welsh city.
+Speaker 0
+That he was talking to Tom Jones, I remember saying. I thought, yeah, that's wealth. There's 5000 to them as well. No, I've been in his friend's house, the phone of Roman, he said just answer that and it was Tom Johan sniffing. There's only cats can do that. Yeah, I don't know. It'll be, it'll be obviously extra integration resources all around. I mean, Wales is a big integration project, but there's all the other smaller ones as well and.
+Speaker 0
+That resource is really what we need, Yeah. And Garth's knowledge of the current Welsh integration will be a great help. Yeah, it's probably wider than some of the people that we're talking to from the customer side. So that'd be good. It's a bit timing's not great, is it? We'd look like to have them on board for, you know, from this next meeting onwards really well, yeah, there you go. I don't know what Phillips are like, will they?
+Speaker 0
+Make them actually work for their notice or gardening leave. Yes, they have done with David, so I assume they will have done with Gareth as well. I know when I left sectors to go to AD for, I got three months gardening leave. That was marvelous. Got the house decorated and everything. Now Phillips didn't give me garden leave either. It was weird that one.
+Speaker 0
+Right so that I think that's everything. Unless anybody has any other LBS that have cropped up. No, sorry. I was just going to say no. I'm sorry for having so many. There's no. I thought you were coming up with another 10. Then we have talked to all enough. Lee, have you got 2 minutes? So do you want me to call you later?
+Speaker 0
+Yeah, we can stay on if you like. Only take 5 minutes tops, I think. No problem right nothing. Ok. All right. I think we're done then. Thanks, everybody. See you bye. Are you are you using that test script 3-4-3 uat test script version 3 point 4 3. Is that the one you've been using? I'm using 3 point. Hold on, just one trace again, I've got. I've got too many too many sheets here, so it should be version 3 4, underscore uat test script underscore 3 4 point 3 1.
+Speaker 0
+I'm saying I'm close. Can are you have you got that one open at the moment or can you open that one? Yes, I've got two that I thought weren't working correctly. So two point 2 1-1 when you get in there two eleven two dot eleven.
+Speaker 0
+Ok. Do you want to share your screen and show me what you're talking about? Yeah, that might be the easy way of doing it. Can you see that one now? Yeah, that was performing a second search for patient or attendance. Once results are displayed, manually remove the original search demographics and search again. And when I did that?
+Speaker 0
+Can you show me on your application? Yeah, I'm just going to do that. I'll wait too much to open as well. Sorry, It's like me.
+Speaker 0
+Is that come up? Yes but your spreadsheet? Yeah, that's cool okay so let me just open my thing on again. So I was search clear all by search on.
+Speaker 0
+Nhs number only. Let me just do it now. So I search on that. It brings up Ron Smith yeah. And when And then if I go in and just.
+Speaker 0
+I go in then and I can't remember if I just search for jewels without doing it clear yeah. It still brings up Ron Smith, whether that's how much of an issue that is. It's just not perfect okay i'll have a look at that one. So you put in.
+Speaker 0
+You searched my NHS number. Have you tried searching my hospital number? And does it do the same thing? I probably. I can't remember to be honest. I've done that much messing. I haven't got a hospital. Sorry, I haven't got my note. I'd open with all my numbers. Certainly that's what it does. It doesn't quite clear everything properly if you don't use a clear function yeah.
+Speaker 0
+It's not, I think. I think that's not the way it's designed. To be honest. I don't think it recognizes properly that you're doing the second search and it should clear the first one. But i'll have a look at that and then I'll just let you know. Yeah, it's just, yeah. And then one other file, Let me just get to my notes.
+Speaker 0
+Which I can't get to work? Which was that one open a picture? What number was that in the test script 4 3 general tab. Edit and changing the address does not appear on the search screen. Here's what my notes say.
+Speaker 0
+So 4 3 digit sorry digit okay. So open a patient record, make a change to each field and say reopen the patient. The data changes are reflected on the screen right? Can you that? And this is the patient banner right?
+Speaker 0
+Yeah, so changing the address does not appear on the search screen, but so if you go in there and change the address, so if I change the address to don't change your passcode. So it's not working now. New hose that would do went to my house, then I go back into the search.
+Speaker 0
+It doesn't change, just the address there. No, it won't. And you'll notice that it doesn't change on the patient banner either. And that's because it doesn't like update the database until you come out of that record properly. That's fine. So if I do a new search and.
+Speaker 0
+How would I come out properly then? Just clear the screen, search for that patient again. Oh, OK. And then if you open the patient banner. Yeah, that. That's right. Now that's. Put the new one in. yeah and play open it. I'm sure it'll be the same as well then yeah OK. So simple. There you go yeah those are the only two I've found.
+Speaker 0
+I've mentioned that so many times that it should, when you hit the save button, it should update the patient banner, but it doesn't. No, fair enough if you know about it and you've mentioned it's not the end of the world, it was just a Nikola found. Yeah, and that was it. Everything else. I mean that's the point of somebody like you who doesn't necessarily know the system that well can go.
+Speaker 0
+That doesn't appear to be right. Whereas somebody else like, it's like, Oh yeah, we know that. It doesn't update it. It's been doing that since day one and we don't, we don't tend to pick that up in tasting. So it's nice to have like a fresh pair of eyes, as it were to have a look at things like that. Tracy gave me this test script and I thought, yeah, it's something to do when I've got a spare minute. Keep on going in, cuz it forces me to learn the system exactly Yeah.
+Speaker 0
+And yeah, I don't know where these test scripts originated from. I think Tracy had a lot to do with them, and I know she's updated a lot on this one. And yeah, like some of the functionality. I'll tell you what I'll do, I'll send you.
+Speaker 0
+A patient end to end flow that doesn't have all the updates that Tracy's done in terms of the like the additional search screens with client ID. And if it is, it's a much simpler one and it'll probably be it's mainly the same, but it's just kind of like filtered out on all the extra stuff that Tracy's put in.
